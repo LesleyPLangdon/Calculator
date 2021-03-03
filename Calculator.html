@@ -17,27 +17,27 @@
         <div>
             <form id='inputForm'>
             <span>
-                <input class='inputBox' id='fnInput' type="number" autofocus='on'/>
+                <input class='inputBox' id='fnInput' type="number" autofocus/>
                 <input class='inputBox' id='snInput' type="number"/>
             </span>
         
         </div>
             <div>
                 
-                <input type='radio' class='operators' id='add' name='operator' value='add'>
-                <label for='add'>Add</label>
-                <input type='radio' class='operators' id='subtract' name='operator' value='subtract'>
-                <label for='subtract'>Subtract</label>
-                <input type='radio' class='operators' id='multiply' name='operator' value='multiply'>
-                <label for='multiply'>Multiply</label>
-                <input type='radio' class='operators' id='divide' name='operator' value='divide' onclick="validate()">
-                <label for='divide'>Divide</label>
+                <label class='bl'><input type='radio' class='operators' id='add' name='operator' value='add'/><span>Add</span></label>
+                <!-- <label for='add' class='radioLabel'>Add</label> -->
+                <label><input type='radio' class='operators' id='subtract' name='operator' value='subtract'/><span>Subtract</span></label>
+                <!-- <label for='subtract' class='radioLabel'>Subtract</label> -->
+                <label><input type='radio' class='operators' id='multiply' name='operator' value='multiply'/><span>Multiply</span></label>
+                <!-- <label for='multiply' class='radioLabel'>Multiply</label> -->
+                <label><input type='radio' class='operators' id='divide' name='operator' value='divide' onclick="validate()"/><span>Divide</span></label>
+                <!-- <label for='divide' class='radioLabel'>Divide</label> -->
                 
             </div>
         </form>
             <div class='taskButtons'>
                 <button id='calculate' onclick="calculate()">=</button>
-                <button id='clear' onclick="clear()">Clear</button>
+                <button id='clear' onclick="clr()">Clear</button>
                 <div>
                     <script lang='javascript'></script>
                 </div>

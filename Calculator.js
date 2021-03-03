@@ -3,6 +3,7 @@ var y;
 var i;
 var result;
 var op;
+
 function validate() {
   y = parseInt(document.getElementById("snInput").value);
   if (y == 0) {
@@ -34,13 +35,13 @@ function calculate() {
   console.log("got to calculate");
 }
 function outputResult(result) {
+  
   document.getElementById(
     "result"
   ).innerHTML = `The result of ${op} ${x} and ${y} is ${result}`;
 }
-function clear() {
-  debugger
-  console.log("clear function called");
+function clr() {
   document.getElementById("inputForm").reset();
+  document.getElementById("fnInput").focus();
   document.getElementById("result").innerHTML = "";
 }
