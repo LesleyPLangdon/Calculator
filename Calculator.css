@@ -13,7 +13,7 @@ main {
   font-size: medium;
 }
 
-.inputLable {
+.inputLabel {
   margin: 0px 60px 10px 60px;
 }
 
@@ -30,16 +30,12 @@ input:focus {
   border-color: black;
 }
 
-#firstNumber {
-}
-
-#secondNumber {
-}
-#fnInput {
+/* #fnInput:focus {
+  
 }
 
 #snInput {
-}
+} */
 .operators {
   margin-top: 40px;
   margin-left: 20px;

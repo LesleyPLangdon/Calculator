@@ -10,8 +10,8 @@
             <div>
                 <div>
             <span>
-                <label class='inputLable' id='firstNumber'>first number</label>
-                <label class='inputLable' id='secondNumber'>second number</label>
+                <label class='inputLabel'>first number</label>
+                <label class='inputLabel'>second number</label>
             </span>
         </div>
         <div>
@@ -30,12 +30,11 @@
                 <label for='subtract'>Subtract</label>
                 <input type='radio' class='operators' id='multiply' name='operator' value='multiply'>
                 <label for='multiply'>Multiply</label>
-                <input type='radio' class='operators' id='divide' name='operator' value='divide' >
-                <label  onclick="validate()" for='divide'>Divide</label>
+                <input type='radio' class='operators' id='divide' name='operator' value='divide' onclick="validate()">
+                <label for='divide'>Divide</label>
                 
             </div>
         </form>
-            <script lang='javascript'></script>
             <div class='taskButtons'>
                 <button id='calculate' onclick="calculate()">=</button>
                 <button id='clear' onclick="clear()">Clear</button>

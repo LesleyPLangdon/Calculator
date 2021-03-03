@@ -39,9 +39,8 @@ function outputResult(result) {
   ).innerHTML = `The result of ${op} ${x} and ${y} is ${result}`;
 }
 function clear() {
+  debugger
   console.log("clear function called");
   document.getElementById("inputForm").reset();
   document.getElementById("result").innerHTML = "";
-
-  //    .focus()
 }
