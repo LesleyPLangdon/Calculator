@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator Project</title>
+        <link rel="stylesheet" href="Calculator.css" />
+        <script src="Calculator.js"></script>
+    </head>
+    <body>
+        <main>
+            <div>
+                <div>
+            <span>
+                <label class='inputLable' id='firstNumber'>first number</label>
+                <label class='inputLable' id='secondNumber'>second number</label>
+            </span>
+        </div>
+        <div>
+            <form id='inputForm'>
+            <span>
+                <input class='inputBox' id='fnInput' type="number" autofocus='on'/>
+                <input class='inputBox' id='snInput' type="number"/>
+            </span>
+        
+        </div>
+            <div>
+                
+                <input type='radio' class='operators' id='add' name='operator' value='add'>
+                <label for='add'>Add</label>
+                <input type='radio' class='operators' id='subtract' name='operator' value='subtract'>
+                <label for='subtract'>Subtract</label>
+                <input type='radio' class='operators' id='multiply' name='operator' value='multiply'>
+                <label for='multiply'>Multiply</label>
+                <input type='radio' class='operators' id='divide' name='operator' value='divide' >
+                <label  onclick="validate()" for='divide'>Divide</label>
+                
+            </div>
+        </form>
+            <script lang='javascript'></script>
+            <div class='taskButtons'>
+                <button id='calculate' onclick="calculate()">=</button>
+                <button id='clear' onclick="clear()">Clear</button>
+                <div>
+                    <script lang='javascript'></script>
+                </div>
+            </div>
+            <div>
+                <p id="result"></p>
+            </div>
+        </div>
+        </main>
+    </body>
+</html>

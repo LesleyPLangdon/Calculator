@@ -1,0 +1,62 @@
+body {
+  text-align: center;
+}
+main {
+  margin: 0 auto;
+  background: rgb(215, 215, 215);
+  height: 52rem;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  font-size: medium;
+}
+
+.inputLable {
+  margin: 0px 60px 10px 60px;
+}
+
+.inputBox {
+  border-color: rgb(220, 220, 220);
+  margin: 0px 20px;
+}
+
+.taskButtons {
+  margin-top: 40px;
+}
+input:focus {
+  border: 2px;
+  border-color: black;
+}
+
+#firstNumber {
+}
+
+#secondNumber {
+}
+#fnInput {
+}
+
+#snInput {
+}
+.operators {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+#calculate {
+  margin-right: 10px;
+  background-color: green;
+  color: white;
+  border-radius: 4px;
+}
+
+#clear {
+  margin-left: 10px;
+  background: rgb(200, 200, 200);
+  border-radius: 4px;
+}
+#result {
+  font-size: larger;
+}
