@@ -1,45 +1,53 @@
-var x;
-var y;
-var i;
-var result;
-var op;
-
-function validate() {
-  y = parseInt(document.getElementById("snInput").value);
+function validateD() {
+  var y = parseInt(document.getElementById("snInput").value);
   if (y == 0) {
     alert("You may not divide by zero, please try again.");
   }
 }
 
-function calculate() {
-  
-  x = parseFloat(document.getElementById("fnInput").value);
-  y = parseFloat(document.getElementById("snInput").value);
-  console.log(x);
-  console.log(y);
+function readInput() {
+  var x = parseFloat(document.getElementById("fnInput").value);
+  var y = parseFloat(document.getElementById("snInput").value);
+  validate(x, y);
+}
+
+function validate(x, y) {
+  if (isNaN(x) || isNaN(y)) {
+    alert("Please enter 2 numbers and try again.");
+  } else {
+    calculate(x, y);
+  }
+}
+
+function calculate(x, y) {
+  var result;
   if (document.getElementById("add").checked == true) {
     result = x + y;
-    op = "adding";
+    document.getElementById(
+      "result"
+    ).innerHTML = `The result of adding ${x} and ${y} is ${result}`;
   } else if (document.getElementById("subtract").checked == true) {
     result = x - y;
-    op = "subtracting";
+    document.getElementById(
+      "result"
+    ).innerHTML = `The result of subtracting ${y} from ${x} is ${result}`;
   } else if (document.getElementById("multiply").checked == true) {
     result = x * y;
-    op = "multiplying";
+    document.getElementById(
+      "result"
+    ).innerHTML = `The result of multiplying ${x} and ${y} is ${result}`;
   } else {
+    if (y == 0) {
+        alert("You may not divide by zero, please try again.");}
+      else{
     result = x / y;
-    op = "dividing";
+    document.getElementById(
+      "result"
+    ).innerHTML = `The result of dividing ${x} by ${y} is ${result}`;
   }
+  }
+}
 
-  outputResult(result);
-  console.log("got to calculate");
-}
-function outputResult(result) {
-  
-  document.getElementById(
-    "result"
-  ).innerHTML = `The result of ${op} ${x} and ${y} is ${result}`;
-}
 function clr() {
   document.getElementById("inputForm").reset();
   document.getElementById("fnInput").focus();

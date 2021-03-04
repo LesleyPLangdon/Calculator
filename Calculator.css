@@ -6,35 +6,32 @@ main {
   background: rgb(215, 215, 215);
   height: 52rem;
   padding: 20px;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: auto;
-  font-size: medium;
 }
-
 .inputLabel {
   margin: 0px 60px 10px 60px;
 }
-
 .inputBox {
-  border-color: rgb(220, 220, 220);
+  border-color: rgb(200, 200, 200);
   margin: 0px 20px;
-}
-
-.taskButtons {
-  margin-top: 40px;
 }
 input:focus {
   border: 2px;
-  border-color: black;
+  border-color: rgb(200, 200, 200);
+}
+input[type="radio"] {
+  margin: 20px 10px;
 }
 input:checked ~ span {
   font-weight: bold;
 }
-.operators {
-  margin-top: 40px;
-  margin-left: 20px;
+.taskButtons {
+  margin-top: 20px;
 }
 #calculate {
   margin-right: 10px;
@@ -42,12 +39,11 @@ input:checked ~ span {
   color: white;
   border-radius: 4px;
 }
-
 #clear {
   margin-left: 10px;
   background: rgb(200, 200, 200);
   border-radius: 4px;
 }
 #result {
-  font-size: larger;
+  font-size: 30px;
 }

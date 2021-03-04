@@ -24,19 +24,15 @@
         </div>
             <div>
                 
-                <label class='bl'><input type='radio' class='operators' id='add' name='operator' value='add'/><span>Add</span></label>
-                <!-- <label for='add' class='radioLabel'>Add</label> -->
+                <label><input type='radio' class='operators' id='add' name='operator' value='add'/><span>Add</span></label>
                 <label><input type='radio' class='operators' id='subtract' name='operator' value='subtract'/><span>Subtract</span></label>
-                <!-- <label for='subtract' class='radioLabel'>Subtract</label> -->
                 <label><input type='radio' class='operators' id='multiply' name='operator' value='multiply'/><span>Multiply</span></label>
-                <!-- <label for='multiply' class='radioLabel'>Multiply</label> -->
-                <label><input type='radio' class='operators' id='divide' name='operator' value='divide' onclick="validate()"/><span>Divide</span></label>
-                <!-- <label for='divide' class='radioLabel'>Divide</label> -->
-                
+                <label><input type='radio' class='operators' id='divide' name='operator' value='divide' onclick="validateD()"/><span>Divide</span></label>
+                                
             </div>
         </form>
             <div class='taskButtons'>
-                <button id='calculate' onclick="calculate()">=</button>
+                <button id='calculate' onclick="readInput()">=</button>
                 <button id='clear' onclick="clr()">Clear</button>
                 <div>
                     <script lang='javascript'></script>
